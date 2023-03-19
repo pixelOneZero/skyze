@@ -1,4 +1,5 @@
 import './App.css';
+import { CurrentWeatherLoader } from './CurrentWeatherLoader';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <h2>
           weather for you
         </h2>
+        <CurrentWeatherLoader />
     </>
   );
 }
