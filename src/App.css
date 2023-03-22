@@ -1,0 +1,44 @@
+h1, h2, h3 {
+    font-weight:normal;
+    margin-bottom: 0;
+}
+
+header {
+    margin-bottom: 1rem;
+}
+
+header h1, header h2 {
+    margin: 0;
+}
+
+header h2 {
+    font-size: 1rem;
+}
+
+img.square {
+    width: 100px;
+    height: 100px;
+}
+
+.card {
+    float: left;
+    border-radius: .5rem;
+    border: 1px solid #aaa;
+    padding: 2rem;
+    margin-top: 1rem;
+    font-size: .875rem;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.imageContainer {
+    text-align: center;
+}
+
+.card ul {
+    padding-left: 1rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}

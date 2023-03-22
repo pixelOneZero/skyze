@@ -17,16 +17,19 @@ export const CurrentWeatherLoader = () => {
     return (
         <>
             {currentWeather && 
-                <div style={{width:'50%', float:'left', display:'inline-block'}}>
+                <div className="card">
                     <h3>
                         Current Weather
                     </h3>
+                    <div class="imageContainer">
+                        <img src={`https://openweathermap.org/img/wn/${currentWeather.weather[0].icon}@2x.png`} className="square" />
+                    </div>
                     <ul>
                         <li>
                             {currentWeather.temp} &deg;F
                         </li>
                         <li>
-                            {currentWeather.weather && currentWeather.weather[0].description}
+                            {currentWeather.weather[0].description}
                         </li>
                         <li>
                             {currentWeather.humidity}% humidity

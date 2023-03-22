@@ -4,12 +4,14 @@ import { CurrentWeatherLoader } from './components/CurrentWeatherLoader';
 function App() {
   return (
     <>
-        <h1>
-          skyze
-        </h1>
-        <h2>
-          weather for you
-        </h2>
+        <header>
+          <h1>
+            skyze
+          </h1>
+          <h2>
+            weather for you
+          </h2>
+        </header>
         <CurrentWeatherLoader />
     </>
   );
