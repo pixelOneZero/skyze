@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { DailyWeather } from './DailyWeather';
 
 export const CurrentWeatherLoader = () => {
     
@@ -21,7 +22,7 @@ export const CurrentWeatherLoader = () => {
                     <h3>
                         Current Weather
                     </h3>
-                    <div class="imageContainer">
+                    <div className="imageContainer">
                         <img src={`https://openweathermap.org/img/wn/${currentWeather.weather[0].icon}@2x.png`} className="square" />
                     </div>
                     <ul>
@@ -39,6 +40,9 @@ export const CurrentWeatherLoader = () => {
                         </li>
                     </ul>
                 </div>
+            }
+            {dailyWeather &&
+                <DailyWeather weatherData={dailyWeather} />
             }
         </>
     );
