@@ -13,7 +13,10 @@ export const DailyWeather = (props) => {
                         Daily Forecast
                     </h3>
                         {dailyWeatherData.map((daily) => {
-                            return <div>{daily.temp.day}</div>
+                            return <div key={daily.dt}>
+                                        {daily.temp.day}
+                                        <img src={`https://openweathermap.org/img/wn/${daily.weather[0].icon}.png`} align="absmiddle" />
+                                    </div>
                         })}
                 </div>
             }
