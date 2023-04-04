@@ -1,3 +1,22 @@
+html {
+    transition: color 300ms, background-color 300ms;    
+}
+
+html[theme='dark-mode'] {
+    filter: invert(1) hue-rotate(180deg);
+}
+
+html[theme='dark-mode'] img{
+    filter: invert(1) hue-rotate(180deg);
+}
+
+body {
+    margin: 1rem;
+    font-family: 'Helvetica Neue', sans-serif;
+    color:#222;
+    background: #fff;
+  }
+
 h1, h2 {
     font-weight:normal;
     margin-bottom: 0;
