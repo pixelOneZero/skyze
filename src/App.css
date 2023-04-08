@@ -24,6 +24,7 @@ h1, h2 {
 
 header {
     margin-bottom: 1rem;
+    display: flex;
 }
 
 header h1, header h2 {

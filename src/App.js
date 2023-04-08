@@ -6,12 +6,14 @@ function App() {
   return (
     <>
         <header>
-          <h1>
-            skyze
-          </h1>
-          <h2>
-            weather for you
-          </h2>
+          <div>
+            <h1>
+              skyze
+            </h1>
+            <h2>
+              weather for you
+            </h2>
+          </div>
           <div>
             <ThemeSwitch/>
           </div>
