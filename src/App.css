@@ -2,11 +2,11 @@ html {
     transition: color 300ms, background-color 300ms;    
 }
 
-html[theme='dark-mode'] {
+html[theme='night'] {
     filter: invert(1) hue-rotate(180deg);
 }
 
-html[theme='dark-mode'] img{
+html[theme='night'] img{
     filter: invert(1) hue-rotate(180deg);
 }
 

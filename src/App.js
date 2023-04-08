@@ -1,5 +1,6 @@
 import './App.css';
 import { CurrentWeatherLoader } from './components/CurrentWeatherLoader';
+import { ThemeSwitch } from './components/ThemeSwitch';
 
 function App() {
   return (
@@ -11,6 +12,9 @@ function App() {
           <h2>
             weather for you
           </h2>
+          <div>
+            <ThemeSwitch/>
+          </div>
         </header>
         <CurrentWeatherLoader />
     </>
